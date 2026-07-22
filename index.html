@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nova Crypto | Crypto Portfolio</title>
+
+<meta name="description" content="Nova Crypto - Professional Cryptocurrency Investment & Portfolio Management">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+💰 Nova <span>Crypto</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="header-buttons">
+<button id="supportBtn">Support</button>
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Welcome to Nova Crypto</h1>
+
+<p>
+Nova Crypto helps individuals and businesses grow their wealth through cryptocurrency investment, blockchain technology, and secure digital asset management.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#contact" class="btn">Get Started</a>
+
+<a href="#portfolio" class="btn-outline">View Portfolio</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/crypto.png" alt="Nova Crypto">
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About Nova Crypto</h2>
+
+<p>
+Nova Crypto is a modern cryptocurrency portfolio and consulting business dedicated to helping clients invest confidently in Bitcoin, Ethereum, Solana, and other leading digital assets. We focus on security, transparency, and long-term financial growth.
+</p>
+
+<div class="about-grid">
+
+<div class="card">
+<h3>Experience</h3>
+<p>Professional crypto research, portfolio management, blockchain education, and market analysis.</p>
+</div>
+
+<div class="card">
+<h3>Mission</h3>
+<p>To make cryptocurrency investing simple, secure, and profitable for everyone.</p>
+</div>
+
+<div class="card">
+<h3>Vision</h3>
+<p>To become a trusted global brand in cryptocurrency investment and blockchain innovation.</p>
+</div>
+
+</div>
+
+</section><!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Crypto Portfolio Management</h3>
+<p>We help investors build and manage diversified cryptocurrency portfolios for long-term growth.</p>
+</div>
+
+<div class="service-card">
+<h3>Market Analysis</h3>
+<p>Daily crypto market insights, trend analysis, and investment opportunities.</p>
+</div>
+
+<div class="service-card">
+<h3>Blockchain Consulting</h3>
+<p>Professional guidance for individuals and businesses entering the blockchain industry.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="portfolio">
+
+<h2>Featured Assets</h2>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-card">
+<img src="images/bitcoin.jpg" alt="Bitcoin">
+<h3>Bitcoin (BTC)</h3>
+<p>The world's leading cryptocurrency.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="images/ethereum.jpg" alt="Ethereum">
+<h3>Ethereum (ETH)</h3>
+<p>Smart contract and DeFi ecosystem.</p>
+</div>
+
+<div class="portfolio-card">
+<img src="images/solana.jpg" alt="Solana">
+<h3>Solana (SOL)</h3>
+<p>High-speed blockchain network.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+
+<h2>Client Reviews</h2>
+
+<div class="testimonial">
+
+<p>
+"Nova Crypto helped me understand cryptocurrency and grow my investment portfolio safely."
+</p>
+
+<h4>⭐⭐⭐⭐⭐ — Michael A.</h4>
+
+</div>
+
+<div class="testimonial">
+
+<p>
+"Professional service and excellent investment advice."
+</p>
+
+<h4>⭐⭐⭐⭐⭐ — Sarah O.</h4>
+
+</div>
+
+</section>
+
+<!-- FAQ -->
+
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+<h3>Is crypto investing risky?</h3>
+<p>Yes. Cryptocurrency prices are volatile. Never invest more than you can afford to lose.</p>
+</div>
+
+<div class="faq-item">
+<h3>Do you guarantee profits?</h3>
+<p>No. We provide education, research, and guidance, but investment returns cannot be guaranteed.</p>
+</div>
+
+</section>
+
+<!-- SUBSCRIBE -->
+
+<section class="subscribe">
+
+<h2>Subscribe to Our Newsletter</h2>
+
+<form id="subscribeForm">
+
+<input
+type="email"
+id="subscriberEmail"
+placeholder="Enter your email"
+required>
+
+<button type="submit">
+Subscribe
+</button>
+
+</form>
+
+<p id="subscribeMessage"></p>
+
+</section>
+<section id="invest">
+
+<h2>Invest Now</h2>
+
+<p>USDT (ERC20) Wallet Address</p>
+
+<input
+type="text"
+id="walletAddress"
+value="0xf17deEB3eE99E3CFbDEbb2A5ddb612aDaE8d1D5C"
+readonly>
+
+<button id="copyWallet">Copy Wallet Address</button>
+
+<form id="investForm">
+
+<input
+type="number"
+id="amount"
+placeholder="Enter Amount (USDT)"
+required>
+
+<input
+type="text"
+id="txid"
+placeholder="Transaction Hash (TxID)"
+required>
+
+<button type="submit">Submit Investment</button>
+
+</form>
+
+</section>
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Nova Crypto</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Your Email"
+required>
+
+<textarea
+id="message"
+placeholder="Write your message..."
+required></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+
+</section>
+
+<!-- SUPPORT -->
+
+<section class="support">
+
+<h2>Need Help?</h2>
+
+<p>
+Our support team is always available to assist you.
+</p>
+
+<button id="supportBtn2">
+Contact Support
+</button>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Nova Crypto</h3>
+
+<p>
+Email:
+<a href="mailto:em5656105@gmail.com">
+em5656105@gmail.com
+</a>
+</p>
+
+<p>
+© 2026 Nova Crypto. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

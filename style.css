@@ -1,0 +1,411 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0f19;
+color:#fff;
+line-height:1.7;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#101624;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+z-index:1000;
+box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#f4b400;
+}
+
+.logo span{
+color:#fff;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#f4b400;
+}
+
+.header-buttons button{
+padding:10px 20px;
+border:none;
+background:#f4b400;
+color:#111;
+border-radius:30px;
+cursor:pointer;
+font-weight:600;
+transition:.3s;
+}
+
+.header-buttons button:hover{
+transform:translateY(-3px);
+}
+
+.hero{
+padding:160px 8% 100px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+color:#ccc;
+}
+
+.hero-buttons{
+display:flex;
+gap:20px;
+}
+
+.btn{
+background:#f4b400;
+padding:14px 28px;
+border-radius:30px;
+font-weight:600;
+color:#111;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+.btn-outline{
+border:2px solid #f4b400;
+padding:14px 28px;
+border-radius:30px;
+color:#f4b400;
+transition:.3s;
+}
+
+.btn-outline:hover{
+background:#f4b400;
+color:#111;
+}
+
+.hero-image img{
+width:420px;
+margin:auto;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-15px);
+}
+}
+
+section{
+padding:90px 8%;
+}
+
+h2{
+font-size:38px;
+text-align:center;
+margin-bottom:40px;
+color:#f4b400;
+}
+
+.about-grid,
+.service-grid,
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card,
+.service-card,
+.portfolio-card{
+background:#151c2d;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover,
+.service-card:hover,
+.portfolio-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(244,180,0,.25);
+}
+
+.portfolio-card img{
+height:200px;
+width:100%;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:15px;
+}/* =========================
+TESTIMONIALS
+========================= */
+
+.testimonials{
+text-align:center;
+}
+
+.testimonial{
+background:#151c2d;
+padding:25px;
+border-radius:15px;
+margin:20px auto;
+max-width:700px;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+}
+
+.testimonial p{
+color:#ddd;
+margin-bottom:15px;
+}
+
+.testimonial h4{
+color:#f4b400;
+}
+
+/* =========================
+FAQ
+========================= */
+
+.faq-item{
+background:#151c2d;
+padding:20px;
+margin-bottom:20px;
+border-left:4px solid #f4b400;
+border-radius:10px;
+}
+
+.faq-item h3{
+margin-bottom:10px;
+color:#f4b400;
+}
+
+/* =========================
+SUBSCRIBE
+========================= */
+
+.subscribe{
+text-align:center;
+}
+
+.subscribe form{
+max-width:600px;
+margin:30px auto;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.subscribe input{
+flex:1;
+min-width:250px;
+padding:15px;
+border:none;
+border-radius:10px;
+outline:none;
+background:#151c2d;
+color:#fff;
+}
+
+.subscribe button{
+padding:15px 30px;
+background:#f4b400;
+border:none;
+border-radius:10px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.subscribe button:hover{
+transform:translateY(-3px);
+}
+
+#subscribeMessage{
+margin-top:15px;
+font-weight:600;
+color:#4caf50;
+}
+
+/* =========================
+CONTACT
+========================= */
+
+#contact form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+#contact input,
+#contact textarea{
+padding:15px;
+background:#151c2d;
+border:none;
+border-radius:10px;
+color:#fff;
+outline:none;
+}
+
+#contact textarea{
+min-height:180px;
+resize:vertical;
+}
+
+#contact button{
+background:#f4b400;
+color:#111;
+padding:15px;
+border:none;
+border-radius:10px;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+#contact button:hover{
+transform:translateY(-3px);
+}
+
+/* =========================
+SUPPORT
+========================= */
+
+.support{
+text-align:center;
+}
+
+.support button{
+padding:15px 35px;
+background:#f4b400;
+color:#111;
+border:none;
+border-radius:30px;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.support button:hover{
+transform:translateY(-3px);
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+background:#101624;
+padding:40px 8%;
+text-align:center;
+margin-top:50px;
+}
+
+footer h3{
+color:#f4b400;
+margin-bottom:10px;
+}
+
+footer p{
+color:#bbb;
+margin:8px 0;
+}
+
+footer a{
+color:#f4b400;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-image img{
+width:280px;
+}
+
+.hero-buttons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.subscribe form{
+flex-direction:column;
+}
+
+.subscribe input,
+.subscribe button{
+width:100%;
+}
+
+}
